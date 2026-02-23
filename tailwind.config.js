@@ -9,10 +9,10 @@ export default {
           blueWhite: '#ACDEF2',
           cyan: '#5BB5D9',
           lightBlue: '#5496BF',
-          blue: '37648C',
+          blue: '#37648C',
           darkBlue: '#1D3759',
           blueText: '#3B465B',
-          darkBlueText: '242B3A',
+          darkBlueText: '#242B3A',
         },
       },
       fontFamily: {
