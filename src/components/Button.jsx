@@ -8,12 +8,15 @@ const buttonStyles = tv({
       primary:
         'bg-portfolio-cyan rounded-lg font-semibold text-portfolio-white',
       ghost:
-        'rounded-full border border-portfolio-white px-4 py-1 text-portfolio-white backdrop-blur-md',
+        'rounded-full border bg-transparent border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
+      ghostBlue:
+        'rounded-full border bg-transparent border-portfolio-cyan hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white ',
     },
 
     size: {
       sm: 'px-4 py-1 text-base',
       md: 'px-6 py-3 text-base',
+      lg: 'px-8 py-3 text-2xl',
     },
   },
   defaultVariants: {
