@@ -1,0 +1,46 @@
+import { useEffect } from 'react';
+
+import { ArrowUpRight, X } from 'lucide-react';
+
+import Button from './Button';
+
+const MenuMobile = ({ isOpen, onClose }) => {
+  // Efeito profissional para travar o scroll do corpo da página
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
+  return (
+    <section
+      className={`bg-portfolio-blueText/90 fixed inset-0 z-50 flex h-dvh items-center justify-center backdrop-blur-md transition-all duration-300 ${isOpen ? 'pointer-events-auto opacity-100' : ' pointer-events-none opacity-0'}`}
+    >
+      {/* Close modal */}
+      <button
+        onClick={onClose}
+        className="text-portfolio-white absolute right-6 top-6 transition-transform hover:scale-110"
+        aria-label="Fechar menu"
+      >
+        <X size={48} />
+      </button>
+
+      {/* Links */}
+      <div className="flex flex-col items-center justify-center gap-6">
+        <h1 className="text-portfolio-white hover:text-portfolio-cyan cursor-pointer text-4xl transition-colors">
+          Portfolio
+        </h1>
+        <h1 className="text-portfolio-white hover:text-portfolio-cyan cursor-pointer text-4xl transition-colors">
+          Sobre
+        </h1>
+        <Button color="ghostBlue" size="lg">
+          Contato <ArrowUpRight size={32} className="text-portfolio-cyan" />
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default MenuMobile;
