@@ -11,6 +11,8 @@ const buttonStyles = tv({
         'rounded-full border bg-transparent border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
       ghostBlue:
         'rounded-full border bg-transparent border-portfolio-cyan hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white ',
+      ghostLink:
+        'rounded-full bg-transparent border active:border-portfolio-cyan ',
     },
 
     size: {
