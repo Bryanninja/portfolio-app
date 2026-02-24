@@ -18,6 +18,18 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      // --- ADICIONE ESTE BLOCO ABAIXO ---
+      keyframes: {
+        floating: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
+      },
+      animation: {
+        floating: 'floating 4s ease-in-out infinite',
+        'floating-slow': 'floating 6s ease-in-out infinite',
+      },
+      // ---------------------------------
     },
   },
   plugins: [],
