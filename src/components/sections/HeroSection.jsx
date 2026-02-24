@@ -4,7 +4,7 @@ import bryan from '../../assets/img/Bryan/BryanImg.webp';
 import bg from '../../assets/img/bg/background.webp';
 import Brace from '../../assets/svg/Brace.svg';
 import Divider from '../../assets/svg/Divider.svg';
-import Button from '../../components/Button';
+import Button from '../Button';
 
 const Hero = () => {
   return (
