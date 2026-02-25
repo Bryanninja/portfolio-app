@@ -1,18 +1,17 @@
 import { ArrowDown } from 'lucide-react';
 
-import Button from './Button';
-
 const LinkSection = ({ id, name }) => {
   return (
-    <Button color="ghostLink" size="sm">
+    <div className="group flex flex-col items-center gap-1 transition-colors duration-300">
       <a
         href={id}
-        className="inline-flex items-center gap-1 hover:text-portfolio-blue"
+        className="inline-flex items-center gap-1 font-semibold text-portfolio-blueText group-hover:text-portfolio-blue group-active:text-portfolio-lightBlue"
       >
         {name} <ArrowDown size={18} />
       </a>
-      <div className="h-[2px] w-full bg-portfolio-blueText"></div>
-    </Button>
+      {/* Linha decorativa */}
+      <div className="h-[2px] w-full rounded-full bg-portfolio-blueText group-hover:bg-portfolio-blue group-active:bg-portfolio-lightBlue"></div>
+    </div>
   );
 };
 
