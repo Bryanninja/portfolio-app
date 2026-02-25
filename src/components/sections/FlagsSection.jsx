@@ -1,9 +1,15 @@
+import Brazil from '../../assets/img/flags/Brazil.webp';
+import Croatia from '../../assets/img/flags/Croatia.webp';
 import EUA from '../../assets/img/flags/EUA.webp';
+import Portugal from '../../assets/img/flags/Portugal.webp';
+import SouthAfrica from '../../assets/img/flags/SouthAfrica.webp';
 import LinkSection from '../LinkSection';
 
 const FlagsSection = () => {
+  const flags = [EUA, Croatia, SouthAfrica, Portugal, Brazil];
+
   return (
-    <section className="container mx-auto py-4">
+    <section className="container overflow-hidden py-4">
       <div className="space-y-6 px-6">
         {/* Title info */}
         <div className="flex flex-col items-center justify-center">
@@ -21,12 +27,25 @@ const FlagsSection = () => {
         </div>
       </div>
 
-      <div className="w-full pt-14">
-        <img src={EUA} alt="" />
+      <div className="mt-12">
+        <div className="scrollbar-hide flex snap-x snap-mandatory overflow-auto">
+          {flags.map((flag, index) => (
+            <div
+              key={index}
+              className="h-[380px] w-[80vw] flex-none snap-center overflow-hidden"
+            >
+              <img
+                src={flag}
+                alt="Projetos Internacionais"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center space-y-8 px-6 py-8">
-        <p className="text-portfolio-blueText">
+      <div className="mt-10 flex flex-col items-center space-y-8 px-6">
+        <p className="text-left text-base leading-relaxed text-portfolio-blueText">
           Colaborando com clientes e empresas em Orlando (EUA), Cidade do Cabo
           (África do Sul), Portugal e Croácia. Uma visão global, entregando
           projetos que se destacam em qualquer mercado.
