@@ -6,7 +6,9 @@ const buttonStyles = tv({
   variants: {
     color: {
       primary:
-        'bg-portfolio-cyan rounded-lg font-semibold text-portfolio-white',
+        'bg-portfolio-cyan text-base rounded-lg font-semibold text-portfolio-white',
+      outline:
+        'bg-transparent rounded-lg border font-semibold border-portfolio-blueText text-portfolio-blueText',
       ghost:
         'rounded-full border bg-transparent border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
       ghostBlue:
