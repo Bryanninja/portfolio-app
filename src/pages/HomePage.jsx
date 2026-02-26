@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import FAB from '../components/FAB';
 import MenuMobile from '../components/MenuMobile';
+import About from '../components/sections/About';
 import FlagsSection from '../components/sections/FlagsSection';
 import HeroSection from '../components/sections/HeroSection';
 
@@ -17,6 +18,7 @@ const HomePage = () => {
       />
       <HeroSection />
       <FlagsSection />
+      <About />
     </main>
   );
 };

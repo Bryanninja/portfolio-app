@@ -9,7 +9,7 @@ const FlagsSection = () => {
   const flags = [EUA, Croatia, SouthAfrica, Portugal, Brazil];
 
   return (
-    <section className="container overflow-hidden py-4">
+    <section className="container overflow-hidden pt-4">
       <div className="space-y-6 px-6">
         {/* Title info */}
         <div className="flex flex-col items-center justify-center">

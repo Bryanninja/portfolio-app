@@ -18,18 +18,22 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
-      // --- ADICIONE ESTE BLOCO ABAIXO ---
+
       keyframes: {
         floating: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-15px)' },
         },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' }, // para o loop invisível
+        },
       },
       animation: {
         floating: 'floating 4s ease-in-out infinite',
         'floating-slow': 'floating 6s ease-in-out infinite',
+        'infinite-scroll': 'infinite-scroll 15s linear infinite',
       },
-      // ---------------------------------
     },
   },
   plugins: [],
