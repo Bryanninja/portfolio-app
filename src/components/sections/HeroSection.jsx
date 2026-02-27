@@ -29,7 +29,7 @@ const Hero = () => {
           <h3 className="text-xl font-bold text-portfolio-white">
             Developer Front-end <br /> Designer UX / UI
           </h3>
-          <Button color="ghost" size="sm">
+          <Button color="outlineWhite" size="sm">
             Ver Portfolio <ArrowUpRight size={18} />
           </Button>
         </div>
@@ -58,7 +58,7 @@ const Hero = () => {
                 <h3 className="text-right text-xl font-bold text-portfolio-white xl:text-2xl">
                   Developer Front-end <br /> Designer UX / UI
                 </h3>
-                <Button color="ghost" size="sm">
+                <Button color="outlineWhite" size="sm">
                   Ver Portfolio <ArrowUpRight size={18} />
                 </Button>
               </div>

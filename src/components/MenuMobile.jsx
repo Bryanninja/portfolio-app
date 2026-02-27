@@ -16,12 +16,12 @@ const MenuMobile = ({ isOpen, onClose }) => {
 
   return (
     <section
-      className={`bg-portfolio-blueText/90 fixed inset-0 z-50 flex h-dvh items-center justify-center backdrop-blur-md transition-all duration-300 ${isOpen ? 'pointer-events-auto opacity-100' : ' pointer-events-none opacity-0'}`}
+      className={`fixed inset-0 z-50 flex h-dvh items-center justify-center bg-portfolio-blueText/90 backdrop-blur-md transition-all duration-300 ${isOpen ? 'pointer-events-auto opacity-100' : ' pointer-events-none opacity-0'}`}
     >
       {/* Close modal */}
       <button
         onClick={onClose}
-        className="text-portfolio-white absolute right-6 top-6 transition-transform hover:scale-110"
+        className="absolute right-6 top-6 text-portfolio-white transition-transform hover:scale-110"
         aria-label="Fechar menu"
       >
         <X size={48} />
@@ -29,13 +29,13 @@ const MenuMobile = ({ isOpen, onClose }) => {
 
       {/* Links */}
       <div className="flex flex-col items-center justify-center gap-6">
-        <h1 className="text-portfolio-white hover:text-portfolio-cyan cursor-pointer text-4xl transition-colors">
+        <h1 className="cursor-pointer text-4xl text-portfolio-white transition-colors hover:text-portfolio-cyan">
           Portfolio
         </h1>
-        <h1 className="text-portfolio-white hover:text-portfolio-cyan cursor-pointer text-4xl transition-colors">
+        <h1 className="cursor-pointer text-4xl text-portfolio-white transition-colors hover:text-portfolio-cyan">
           Sobre
         </h1>
-        <Button color="ghostBlue" size="lg">
+        <Button color="outlineBlue" size="lg">
           Contato <ArrowUpRight size={32} className="text-portfolio-cyan" />
         </Button>
       </div>

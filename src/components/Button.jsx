@@ -9,10 +9,10 @@ const buttonStyles = tv({
         'bg-portfolio-cyan text-base rounded-lg font-semibold text-portfolio-white',
       outline:
         'bg-transparent rounded-lg border font-semibold border-portfolio-blueText text-portfolio-blueText',
-      ghost:
-        'rounded-full border bg-transparent border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
-      ghostBlue:
-        'rounded-full border bg-transparent border-portfolio-cyan hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white ',
+      outlineWhite:
+        'rounded-full border bg-portfolio-blue/20 border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
+      outilineBlue:
+        'rounded-full border  bg-portfolio-blue/20 border-portfolio-cyan hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md ',
     },
 
     size: {

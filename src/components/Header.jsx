@@ -24,7 +24,7 @@ const Header = ({ className = '' }) => {
             </ul>
           </nav>
 
-          <Button color="ghostBlue" size="sm">
+          <Button color="outlineBlue" size="sm">
             Contato <ArrowUpRight size={20} className="text-portfolio-cyan" />
           </Button>
         </div>
