@@ -11,7 +11,7 @@ const buttonStyles = tv({
         'bg-transparent rounded-lg border font-semibold border-portfolio-blueText text-portfolio-blueText',
       outlineWhite:
         'rounded-full border bg-portfolio-blue/20 border-portfolio-white hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md',
-      outilineBlue:
+      outlineBlue:
         'rounded-full border  bg-portfolio-blue/20 border-portfolio-cyan hover:bg-portfolio-blue active:bg-portfolio-cyan text-portfolio-white backdrop-blur-md ',
     },
 
